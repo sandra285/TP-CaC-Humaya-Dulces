@@ -1,0 +1,193 @@
+:root {
+    --first-color: rgb(240, 236, 236);
+    --second-color: rgb(153, 136, 137);
+    --third-color: rgb(61, 54, 55);
+    --bg-color: rgb(34, 33, 33);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--first-color);
+    overflow-x: hidden;
+}
+
+section[id] {
+    scroll-margin-top: 70px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--first-color);
+}
+
+a:hover{
+    color: var(--second-color);
+}
+
+.sombra {
+    box-shadow: 0 0 3px var(--second-color);
+}
+
+.banner {
+    background-image: url(./img/imagenCentral.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 34px;
+    text-shadow: 5px 5px 5px var(--bg-color);
+}
+
+.parrafoBanner {
+    font-size: 15px;
+    text-shadow: 1px 1px 2px var(--bg-color);
+}
+
+.btn-banner {
+    border-radius: 25px;
+    opacity: 0.75;
+}
+
+.btn-banner:hover {
+    opacity: 1;
+}
+
+.titulo-seccion {
+    background-color: var(--third-color);
+    height: 5em;
+}
+
+.titulo-productos {
+    height: 20rem;
+}
+
+.img-hover {
+    opacity: 0.8;
+}
+
+.img-hover:hover {
+    opacity: 1;
+}
+
+.card {
+    background: var(--bg-color);
+    width: 100%;
+    border-radius: 0;
+}
+
+.img-producto {
+    height: 100%;
+}
+
+.text-color {
+    color: var(--second-color);
+}
+
+.btn-producto {
+    border: 2px solid var(--second-color);
+    width: 25%;
+}
+
+.btn-producto:hover {
+   background-color: var(--second-color);
+   color: var(--first-color);
+}
+
+.bg-alfajores {
+    background-color:var(--second-color);
+}
+
+.text-color-alfajores {
+    color: var(--third-color);
+}
+
+.btn-alfajores {
+    border: 2px solid var(--third-color);
+    width: 10rem;
+}
+
+.btn-alfajores:hover {
+    background-color: var(--third-color);
+    color: var(--first-color);
+}
+
+.img-contacto {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.locales-ocultar {
+    display: none;
+}
+
+.bi {
+    font-size: 2rem;
+    color: var(--first-color);
+}
+
+.bi:hover {
+    color:var(--second-color);
+}
+
+
+@media (min-width: 992px){
+
+    .parrafoBanner{
+        font-size: 20px;
+    }
+
+    .subrayado {
+        position: relative;
+    }
+      
+    .subrayado::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: -3px;
+        left: 0;
+        background-color:var(--third-color);
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: transform 0.5s ease-in-out;
+    }
+      
+    .subrayado:hover::before {
+        transform: scaleX(1);
+        transform-origin: center ;
+    }
+
+    .receta {
+        border: 5px solid var(--third-color);
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .receta:hover {
+        transform: scale(1.1);
+    }
+
+    .locales-ocultar {
+        display: block;
+    }
+}
