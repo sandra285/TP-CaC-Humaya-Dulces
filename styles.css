@@ -26,6 +26,17 @@ section[id] {
     scroll-margin-top: 70px;
 }
 
+.mostrar {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.mostrar.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -180,12 +191,12 @@ h1 {
 
     .receta {
         border: 5px solid var(--third-color);
-        transition: transform 0.5s ease-in-out;
+        /* transition: transform 0.5s ease-in-out; */
     }
     
-    .receta:hover {
+    /* .receta:hover {
         transform: scale(1.1);
-    }
+    } */
 
     .locales-ocultar {
         display: block;

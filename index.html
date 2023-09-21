@@ -46,7 +46,7 @@
     
   <main>
     <!-- Home -->
-    <section id="home" class="banner p-5 d-flex justify-content-end align-items-center vw-100">
+    <section id="home" class="mostrar banner p-5 d-flex justify-content-end align-items-center vw-100">
       <div class="col-12 col-md-6 offset-md-6 col-xl-4 offset-xl-7">
         <h1 class="fw-bold pb-3 text-center">DULCES DEL ALMA</h1>
         <p class="px-2 mx-md-0 px-md-4 text-justify parrafoBanner">
@@ -60,7 +60,7 @@
 
     <!-- Productos -->
     <section id="productos">
-      <div class="titulo-seccion titulo-productos d-flex flex-column justify-content-center align-items-center pt-5">
+      <div class="mostrar titulo-seccion titulo-productos d-flex flex-column justify-content-center align-items-center pt-5">
         <h2>PRODUCTOS</h2>
         <div class="container-fluid bg-dark mt-3">
           <h4 class="text-center p-3">La mejor calidad para vos</h4>
@@ -81,7 +81,7 @@
         </div>
       </div>
        
-      <div class="card sombra">
+      <div class="mostrar card sombra">
         <div class="row g-0">
           <div class="col-lg-6">
             <img src="./img/Producto1.png" class="img-producto img-fluid" alt="Dulce de Leche Tradicional">
@@ -97,7 +97,7 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="mostrar card">
         <div class="row g-0">
           <div class="col-lg-6 order-lg-1">
             <img src="./img/Producto2.png" class="img-producto img-fluid" alt="Dulce de Leche Sin Azúcar">
@@ -113,7 +113,7 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="mostrar card">
         <div class="row g-0">
           <div class="col-lg-6">
             <img src="./img/Producto3.png" class="img-producto img-fluid" alt="Dulce de Leche Choconutt">
@@ -129,7 +129,7 @@
         </div>
       </div>
           
-      <div class="card bg-alfajores p-md-5">
+      <div class="mostrar card bg-alfajores p-md-5">
         <div class="row g-0">
           <div class="col-12 col-md-5 order-md-1 d-flex justify-content-center align-items-center p-3">
             <img src="./img/Producto4.png" class="img-fluid" alt="Alfajores de Maicena">
@@ -147,7 +147,7 @@
     </section>
 
     <!-- Contacto -->
-    <section id="contacto">
+    <section id="contacto" class="mostrar">
       <div class=" d-flex flex-column justify-content-center align-items-center p-4">
         <h2>Contactanos</h2>
       </div>
@@ -175,11 +175,25 @@
     </section>
 
     <!-- Recetas -->
-    <section id="recetas">
+    <section id="recetas" class="mostrar">
       <div class="d-flex flex-column justify-content-center align-items-center p-4">
         <h2>Recetas</h2>
       </div>
-      <div class="d-flex flex-column flex-md-row justify-content-around">
+
+      <div class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Las tarjetas se agregan acá dinámicamente -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- <div class="mostrar d-flex flex-column flex-md-row justify-content-around">
         <div class="col-12 col-md-3 bg-alfajores receta">
           <img src="./img/conitos.png" class="card-img-top img-fluid" alt="Conitos">
           <div class="card-body d-flex flex-column align-content-center align-items-center">
@@ -188,7 +202,7 @@
             <a href="#" class="btn btn-alfajores text-color-alfajores mb-4"><small>PREPARACIÓN</small></a>
           </div>
         </div>
-        <div class="col-12 col-md-3 bg-alfajores receta">
+        <div class="mostrar col-12 col-md-3 bg-alfajores receta">
           <img src="./img/pepas.png" class="card-img-top img-fluid" alt="Pepas">
           <div class="card-body d-flex flex-column align-content-center align-items-center">
             <h5 class="card-title text-color-alfajores pt-3">PEPAS</h5>
@@ -196,7 +210,7 @@
             <a href="#" class="btn btn-alfajores text-color-alfajores mb-4 "><small>PREPARACIÓN</small></a>
           </div>
         </div>
-        <div class="col-12 col-md-3 bg-alfajores receta">
+        <div class="mostrar col-12 col-md-3 bg-alfajores receta">
           <img src="./img/tortaNutt.png" class="card-img-top img-fluid" alt="Torta Nutt">
           <div class="card-body d-flex flex-column align-content-center align-items-center">
             <h5 class="card-title text-color-alfajores pt-3">TORTA NUTT</h5>
@@ -204,11 +218,11 @@
             <a href="#" class="btn btn-alfajores text-color-alfajores mb-4 "><small>PREPARACIÓN</small></a>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
         
     <!-- Locales -->
-    <section id="locales">
+    <section id="locales" class="mostrar">
       <div class=" d-flex flex-column justify-content-center align-items-center p-4 mt-3">
         <h2 class="">Encontranos en:</h2>
       </div>
@@ -266,7 +280,9 @@
 
   <!--Scripts de Bootstrap-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
+  <script src="./js/script.js"></script>  
+  <script src="./js/api.js"></script>  
+</body>
 </html>
 
 
